@@ -17,8 +17,7 @@ Run the image:
 ```
 docker run --rm --name split-evaluator \
  -p 7548:7548 \
- -e SPLIT_EVALUATOR_API_KEY=<YOUR-SDK-API-KEY> \
- -e SPLIT_EVALUATOR_AUTH_TOKEN=<YOUR-AUTH-TOKEN> \
+ -e SPLIT_EVALUATOR_API_KEY="${SPLIT_EVALUATOR_API_KEY}" \
  splitsoftware/split-evaluator
  ```
 
