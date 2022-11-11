@@ -7,3 +7,13 @@ edition = "2021"
 
 [dependencies]
 structopt = "0.3.26"               # Parse command line argument by defining a struct.
+serde_json = "1.0.87"              # A JSON serialization file format
+home = "0.5.4"                # Shared definitions of home directories
+
+[dependencies.chrono]
+features = ["serde"]  # We're also going to need the serde feature for the chrono crate, so we can serialize the DateTime field.
+version = "0.4.22"
+
+[dependencies.serde]  # Add serde in its own section.
+features = ["derive"] # We'll need the derive feature.
+version = "1.0.147"
